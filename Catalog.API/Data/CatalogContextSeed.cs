@@ -21,7 +21,7 @@ namespace Catalog.API.Data
             var p1 = new Product()
             {
                 Id = "507f191e810c19729de860ea",
-                Name = "Samdung S10e",
+                Name = "Samsung S10e",
                 Description = "Ut sequi officia qui corporis suscipit cum deserunt minus ea quidem expedita et voluptas perferendis sed totam perspiciatis. Et atque officia vel cupiditate rerum ea laboriosam quasi est iste vero est iste cupiditate ea quia doloribus eum unde repellat.",
                 Image = "celulars10e.png",
                 Price = 3500.00M,
@@ -57,7 +57,7 @@ namespace Catalog.API.Data
                 Name = "Maquina de Lavar",
                 Description = "Ut sequi officia qui corporis suscipit cum deserunt minus ea quidem expedita et voluptas perferendis sed totam perspiciatis. Et atque officia vel cupiditate rerum ea laboriosam quasi est iste vero est iste cupiditate ea quia doloribus eum unde repellat.",
                 Image = "celulars10e.png",
-                Price = 3500.00M,
+                Price = 1500.00M,
                 Category = "Eletro Domestico"
 
             };
