@@ -33,5 +33,5 @@ services:
 
 volumes:
   mongo_data:
-  postrgres_data:
+  postgres_data:
   pgadmin_data:

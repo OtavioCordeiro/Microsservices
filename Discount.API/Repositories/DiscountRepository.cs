@@ -31,8 +31,7 @@ namespace Discount.API.Repositories
         {
             var connection = GetConnectionPostgreSql();
 
-            var affecetd = await connection.ExecuteAsync("UPDATE Coupon " +
-                                                        "SET ProductName = @ProductName, Description = @Description, Amount = @Amount ",
+            var affecetd = await connection.ExecuteAsync("INSERT INTO Coupon (ProductName, Description, Amount) VALUES (@ProductName, @Description, @Amount) ",                                                    
                                                          new { ProductName = coupon.ProductName, Description = coupon.Description, Amount = coupon.Amount });
 
             if (affecetd == 0)
@@ -44,8 +43,7 @@ namespace Discount.API.Repositories
         {
             var connection = GetConnectionPostgreSql();
 
-            var affecetd = await connection.ExecuteAsync("UPDATE Coupon (ProductName, Description, Amount) " +
-                                                         "VALUES (@ProductName, @Description, @Amount" +
+            var affecetd = await connection.ExecuteAsync("UPDATE Coupon SET ProductName = @ProductName, Description = @Description, Amount = @Amount " +                                                         
                                                          "WHERE Id = @Id",
                                                          new { ProductName = coupon.ProductName, Description = coupon.Description, Amount = coupon.Amount, Id = coupon.Id });
 
