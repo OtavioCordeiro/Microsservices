@@ -55,9 +55,10 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - "CacheSettings:ConnectionString=basketdb:6379"
-      - "GrpcSettings:DiscountUrl=http://discount.grpc:8003"
+      - GrpcSettings:DiscountUrl=http://host.docker.internal:8003
+      
     depends_on:
-      - basketdb
+      - basketdb      
     ports:
       - "8001:80"
 
